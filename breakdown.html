@@ -28,45 +28,65 @@
 												<!-- Content -->
 													<h2 id="content">Front End(UI) by Clayton Sibanda</h2>
 													<p>The user interface is the only point of contact that the user has with the application. A number of usability studies were done before it was developed. 
-													Before development an interactive high fidelity prototype was developed using Adobe xd.</p>
-													<div class="row">
-														<div class="col-6 col-12-small">
-															<h3>Sem turpis amet semper</h3>
-															<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-														</div>
-														<div class="col-6 col-12-small">
-															<h3>Magna odio tempus commodo</h3>
-															<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan.</p>
-														</div>
-														<!-- Break -->
-														<div class="col-4 col-12-medium">
-															<h3>Interdum sapien gravida</h3>
-															<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-														</div>
-														<div class="col-4 col-12-medium">
-															<h3>Faucibus consequat lorem</h3>
-															<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-														</div>
-														<div class="col-4 col-12-medium">
-															<h3>Accumsan montes viverra</h3>
-															<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit.</p>
-														</div>
-													</div>
+													Before development an interactive high fidelity prototype was developed using Adobe xd. The interface was a web based application developed using the React framework. The web interface allowed users to schedule measurements
+													like tcp speed test, DNS lookup , ping and http. The scheduled jobs would then be sent using AJAX to the server.
+													The interface also allowed user to visualise the results of the measurements they scheduled.</p>
+														
+														<article class="">
+														<h2 class="major">UI prototype</h2>
 
-												<hr class="major" />
+											<a  class="image " target='_blank'><img style='max-width:100%; max-height:100%;' src="images/proto.png" alt="" /></a>
+										</article>
+										<hr>
+											<div class ='row'>
+											<article class="col-6 col-12-medium">
+														<h2 class="major">Http Measurement Form</h2>
 
-											
-														<div class="col-6 col-12-medium">
+											<a  class="image " target='_blank'>
+											<img style='max-width:100%; max-height:100%;' src="images/http.png	" alt="" />
+											</a>
+										</article>
+										<article class="col-6 col-12-medium">
+														<h2 class="major">TCP Measurement Form</h2>
 
-															
-
-															
-
-															<!-- Image -->
-												
-
+											<a  class="image " target='_blank'>
+											<img style='max-width:100%; max-height:100%;' src="images/tcp.png	" alt="" />
+											</a>
+										</article>
+											</div>
 											</section>
 
+															<section>
+											
+
+												<!-- Content -->
+													<h2 id="content">Measurement Orchestrator Design by David Kheri</h2>
+													<p>												 
+												 The Orchestrator was responsible for the orchestration of measurements to be run on mobile nodes in the network
+												 based on some user defined fields. The chosen fields were start time, type of measurement to be performed, node count. 
+												 The tool allowed researchers and network managers to schedule measurements to run in the network at specified times with the added
+												 option of repetition of a measurement at regular intervals.
+												 </p>
+													
+												<article class="">
+														<h2 class="major">Orchestrator State machine diagram</h2>
+
+											<a  class="image " target='_blank'><img style='max-width:100%; max-height:100%;' src="images/David_orch.jpeg" alt="" /></a>
+										</article>								
+											</section>
+											<section>
+											
+
+												<!-- Content -->
+													<h2 id="content">Server and Database Design by Meluleki Dube</h2>
+													<p> As a whole, this was the data collection part of the system. A system for 
+													storing the data to be recorded was designed. A time series database InfluxDB was used for recording data as it comes in from the android application.
+													The measurements scheduled from the web client we stored on mongodb and then dispatched from there to mobile phones.											
+													A file monitor to monitor pcap new pcap files being created from a remote server was also built so that the files can be analyzed and stored on the database as well.</p>
+													
+																			
+											</section>
+								
 									</div>
 								</div>
 
@@ -86,7 +106,7 @@
 													<li><a href="goals.html">Goals</a></li>
 													<li><a href="breakdown.html">Project Breakdown</a></li>
 													
-													<li><a href="#">Results</a></li>
+													<li><a href="results.html">Results</a></li>
 													
 												</ul>
 											</nav>
